@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'LinexSweet';
+  src: url('./assets/fonts/LinexSweetStd-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+box-shadow: 0 8px 32px 0 rgba(224, 32, 32, 0.37);
+
+  display: flex;
+  align-items: center;
+  padding: 1rem 15%;
+  background-color: rgb(40, 38, 36);
+
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+
+  font-family: 'LinexSweet', system-ui, sans-serif;
+}
+.Moi {
+  margin-right: 2rem;
+  font-size: 30px;
+  color: #ff007f; 
+  position: relative;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 3rem;
+  gap: 25rem;
+}
+
+.HeaderLinks {
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+}
+
+.HeaderLinks h2 {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.HeaderLinks h2:hover {
+  color: #ff007f; 
+}
+
+.HeaderLinks h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 0%;
+  height: 3px;
+  background-color: #ff007f;
+  transition: width 0.5s ease-in-out;
+  border-radius: 2px;
+}
+
+.HeaderLinks h2:hover::after {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  gap: 3rem;
+}
+
+.logo i {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+
+  z-index: 1001; 
+}
+
+.logo i:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #ff007f);
+}
+
+.github-logo {
+  background-image: url("/Image/Logo/github-logo-repository-computer-icons-github-4f62259da03e1590b862793c9af5b446.png");
+}
+
+.linkedin-logo {
+  background-image: url("/Image/Logo/Linkedinlogo.jpg");
+}

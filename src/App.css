@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background-image: url("Image/Background/DEV-CODE-4K.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  min-height: 200vh;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
