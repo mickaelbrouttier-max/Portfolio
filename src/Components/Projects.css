@@ -28,12 +28,12 @@
 .projects-sections {
   display: flex;
   justify-content: center;
-
   width: 80%;
   margin-top: 50px;
 }
 
 .projects-container {
+  
   width: 100%;
   min-height: 300px;
   background: rgba(20, 18, 22, 0.9);
@@ -44,15 +44,17 @@
   z-index: 0;
 }
 .carousel {
+  
   display: flex;
   position: relative;
-  height: 400px;
+  height: 450px;
   overflow: hidden;
    perspective: 1000px;
   justify-content: center;
 }
 
 .carousel-card {
+  
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -66,11 +68,14 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  max-height: 400px;
+  cursor: pointer;
 }
 
 .position-0 {
   transform: translateX(0) scale(1.2) rotateY(0deg) translateZ(50px);
   z-index: 3;
+
 }
 
 .position-1 {
@@ -92,10 +97,10 @@
 }
 .carousel-card img {
   width: 400px;
-  max-height: 230px;
   object-fit: contain;
   background-color: #141216;
    margin-bottom: 15px;
+   max-height: 300px;
 }
 
 .position--1,
@@ -105,11 +110,23 @@
 .carousel-card {
   position: absolute;
   width: 280px;
-  height: 360px;
   transition: transform 0.6s ease, opacity 0.6s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 16px;
+}
+.Projecttext {
+  margin: 0px auto 0 auto;
+
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #cccccc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
