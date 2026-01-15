@@ -11,6 +11,7 @@ export default function Header() {
     <div className="HeaderLinks">
       <h2>Accueil</h2>
       <h2>A propos de moi</h2>
+      <h2>Skills</h2>
       <h2>Projects</h2>
       <h2>Contact</h2>
     </div>
