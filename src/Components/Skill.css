@@ -5,61 +5,61 @@
   height: 90vh;
   margin-top: 150px;
   font-size: 20px;
-  color: white;
-  background-color: rgba(20, 18, 22, 0.75);
-  box-shadow: 0 8px 32px rgba(212, 41, 41, 1);
+  color: var(--text-main);
+  background-color: var(--bg-main);
   align-items: center;
-      font-family: 'LinexSweet', system-ui, sans-serif;
-
+  font-family: 'LinexSweet', system-ui, sans-serif;
 }
+
 .skill-title {
   margin-top: 40px;
-
   font-size: 48px;
   font-weight: bold;
-  color: #ffffff;
-    text-align: center;
+  color: var(--text-main);
+  text-align: center;
 }
+
 .skill-sections {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 70%;
-    justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 70%;
+  justify-content: space-between;
 }
 
 .hard-skills img {
-    width: 60px;
-    height: 50px;
-    margin: 10px;
+  width: 60px;
+  height: 50px;
+  margin: 10px;
 }
+
 .hard-skills {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
+
 .titlehardskills {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
+
 .TechGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 30px;
   margin-top: 40px;
   max-width: 500px;
-
 }
 
 .TechCard {
-  background: rgba(20, 18, 22, 0.9);
-  border: 1px solid rgba(255, 0, 127, 0.4);
+  background: var(--bg-strong);
+  border: 1px solid var(--border-primary);
   border-radius: 16px;
   padding: 20px;
 
@@ -68,30 +68,30 @@
   align-items: center;
   gap: 12px;
 
-  box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
+  box-shadow: var(--shadow-primary-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .TechCard:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 35px rgba(255, 0, 127, 0.5);
+  box-shadow: var(--shadow-primary-strong);
 }
 
 .TechCard img {
   width: 50px;
-    height: 48px;
-  filter: drop-shadow(0 0 6px rgba(255, 0, 127, 0.8));
+  height: 48px;
+  filter: drop-shadow(0 0 6px var(--primary));
 }
 
 .TechCard span {
-  color: white;
+  color: var(--text-main);
   font-weight: bold;
   font-size: 14px;
 }
-.soft-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 50px;
-}
 
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50px;
+}

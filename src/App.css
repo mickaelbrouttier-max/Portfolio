@@ -1,3 +1,63 @@
+:root {
+  --primary: #ff007f;
+  --primary-light: #ff4da6;
+
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+
+  --bg-main: rgba(20, 18, 22, 0.75);
+  --bg-strong: rgba(20, 18, 22, 0.95);
+  --bg-input: rgba(20, 18, 22, 0.9);
+
+  --border-primary: rgba(255, 0, 127, 0.4);
+
+  --shadow-primary-soft: 0 0 20px rgba(255, 0, 127, 0.2);
+  --shadow-primary-strong: 0 0 35px rgba(255, 0, 127, 0.5);
+  --shadow-red: 0 8px 32px rgba(224, 32, 32, 0.37);
+}
+
+/* ============================= */
+/* Thème Neon */
+/* ============================= */
+:root[data-theme="neon"] {
+  --primary: #00fff7;
+  --primary-light: #5eead4;
+
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+
+  --bg-main: rgba(0, 0, 0, 0.85);
+  --bg-strong: rgba(20, 20, 20, 0.95);
+  --bg-input: rgba(10, 10, 10, 0.9);
+
+  --border-primary: rgba(0, 255, 247, 0.4);
+
+  --shadow-primary-soft: 0 0 20px rgba(0, 255, 247, 0.3);
+  --shadow-primary-strong: 0 0 40px rgba(0, 255, 247, 0.6);
+  --shadow-red: 0 8px 32px rgba(0, 255, 247, 0.37);
+}
+
+/* ============================= */
+/* Thème Dark Red */
+/* ============================= */
+:root[data-theme="dark-red"] {
+  --primary: #dc2626;
+  --primary-light: #f87171;
+
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+
+  --bg-main: rgba(30, 18, 18, 0.75);
+  --bg-strong: rgba(30, 20, 20, 0.95);
+  --bg-input: rgba(30, 20, 20, 0.9);
+
+  --border-primary: rgba(220, 38, 38, 0.4);
+
+  --shadow-primary-soft: 0 0 20px rgba(220, 38, 38, 0.3);
+  --shadow-primary-strong: 0 0 35px rgba(220, 38, 38, 0.6);
+  --shadow-red: 0 8px 32px rgba(220, 38, 38, 0.37);
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -6,18 +66,27 @@ html, body {
 .background {
   position: fixed;
   inset: 0;
-  background-image: url("Image/Background/DEV-CODE-4K.webp");
+  background-image: url("/Portfolio/Image/Background/DEV-CODE-4K.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
 }
+
 .content {
   position: relative;
   z-index: 1;
   min-height: 200vh;
-  color: white;
+  color: var(--text-main);
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+#projects,
+#skills,
+#contact,
+#about {
+  scroll-margin-top: 70px;
 }

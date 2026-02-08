@@ -1,27 +1,24 @@
-
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 90vh;
   margin-top: 150px;
   padding-top: 50px;
 
-  font-size: 20px;
-  color: white;
+  font-size: 25px;
+  color: var(--text-main);
   font-family: 'LinexSweet', system-ui, sans-serif;
 
-  background-color: rgba(20, 18, 22, 0.75);
-  box-shadow: 0 8px 32px rgba(212, 41, 41, 1);
+  background-color: var(--bg-main);
+  box-shadow: var(--shadow-red);
 }
-
 
 .projects-title {
   margin-top: 40px;
   font-size: 48px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--text-main);
   text-align: center;
 }
 
@@ -33,16 +30,16 @@
 }
 
 .projects-container {
-  
   width: 100%;
   min-height: 300px;
-  background: rgba(20, 18, 22, 0.9);
-  border: 1px solid rgba(255, 0, 127, 0.4);
+  background: var(--bg-strong);
+  border: 1px solid var(--border-primary);
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
+  box-shadow: var(--shadow-primary-soft);
   z-index: 0;
 }
+
 .carousel {
   
   display: flex;

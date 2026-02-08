@@ -4,6 +4,7 @@ import Header from './Header'
 import Apropos from './Components/Apropos'
 import Skill from './Components/Skill'
 import Projects from './Components/Projects'
+import Contactform from './Components/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Apropos />
     <Skill />
     <Projects />
+    <Contactform />
     </>
   )
 }

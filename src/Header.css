@@ -5,28 +5,28 @@
   font-style: normal;
   font-display: swap;
 }
+
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-box-shadow: 0 8px 32px 0 rgba(224, 32, 32, 0.37);
 
+  box-shadow: var(--shadow-red);
   display: flex;
   align-items: center;
   padding: 1rem 15%;
   background-color: rgb(40, 38, 36);
 
-  color: white;
+  color: var(--text-main);
   font-weight: bold;
-  z-index: 1000;
-
   font-family: 'LinexSweet', system-ui, sans-serif;
 }
+
 .Moi {
   margin-right: 2rem;
   font-size: 30px;
-  color: #ff007f; 
+  color: var(--primary);
   position: relative;
 }
 
@@ -47,22 +47,22 @@ box-shadow: 0 8px 32px 0 rgba(224, 32, 32, 0.37);
 .HeaderLinks h2 {
   position: relative;
   cursor: pointer;
-  color: white;
+  color: var(--text-main);
   transition: color 0.3s;
 }
 
 .HeaderLinks h2:hover {
-  color: #ff007f; 
+  color: var(--primary);
 }
 
 .HeaderLinks h2::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -5px; 
+  bottom: -5px;
   width: 0%;
   height: 3px;
-  background-color: #ff007f;
+  background-color: var(--primary);
   transition: width 0.5s ease-in-out;
   border-radius: 2px;
 }
@@ -85,13 +85,12 @@ box-shadow: 0 8px 32px 0 rgba(224, 32, 32, 0.37);
   background-position: center;
   transition: transform 0.3s, filter 0.3s;
   cursor: pointer;
-
-  z-index: 1001; 
+  z-index: 1001;
 }
 
 .logo i:hover {
   transform: scale(1.2);
-  filter: drop-shadow(0 0 10px #ff007f);
+  filter: drop-shadow(0 0 10px var(--primary));
 }
 
 .github-logo {

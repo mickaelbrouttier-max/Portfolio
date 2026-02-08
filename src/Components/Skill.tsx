@@ -2,7 +2,7 @@ import "./Skill.css";
 
 export default function Skill() {
   return (
-    <div className="skill">
+    <div id="skills" className="skill">
       <div className="skill-title">My Skills</div>
       <div className="skill-sections">
         <div className="hard-skills">
@@ -11,32 +11,32 @@ export default function Skill() {
           </div>
           <div className="TechGrid">
             <div className="TechCard">
-              <img src="/Image/Skills/html-5.png" alt="HTML5" />
+              <img src="/Portfolio/Image/Skills/html-5.png" alt="HTML5" />
               <span>HTML5</span>
             </div>
 
             <div className="TechCard">
-              <img src="/Image/Skills/css-3.png" alt="CSS3" />
+              <img src="/Portfolio/Image/Skills/css-3.png" alt="CSS3" />
               <span>CSS3</span>
             </div>
 
             <div className="TechCard">
-              <img src="/Image/Skills/js.png" alt="JavaScript" />
+              <img src="/Portfolio/Image/Skills/js.png" alt="JavaScript" />
               <span>JavaScript</span>
             </div>
 
             <div className="TechCard">
-              <img src="/Image/Skills/react.png" alt="React" />
+              <img src="/Portfolio/Image/Skills/react.png" alt="React" />
               <span>React</span>
             </div>
 
             <div className="TechCard">
-              <img src="/Image/Skills/nodejs.png" alt="Node.js" />
+              <img src="/Portfolio/Image/Skills/nodejs.png" alt="Node.js" />
               <span>Node.js</span>
             </div>
 
             <div className="TechCard">
-              <img src="/Image/Skills/typescript.png" alt="TypeScript" />
+              <img src="/Portfolio/Image/Skills/typescript.png" alt="TypeScript" />
               <span>TypeScript</span>
             </div>
           </div>
@@ -47,27 +47,27 @@ export default function Skill() {
         </div>
         <div className="TechGrid">
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/autonomie.png" alt="Autonomie" />
+  <img src="/Portfolio/Image/Skills/Softskill/autonomie.png" alt="Autonomie" />
   <span>Autonomie</span>
 </div>
 
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/communication.png" alt="Communication" />
+  <img src="/Portfolio/Image/Skills/Softskill/communication.png" alt="Communication" />
   <span>Communication</span>
 </div>
 
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/learning.png" alt="Apprentissage continu" />
+  <img src="/Portfolio/Image/Skills/Softskill/learning.png" alt="Apprentissage continu" />
   <span>Apprentissage continu</span>
 </div>
 
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/personnes.png" alt="Relationnel" />
+  <img src="/Portfolio/Image/Skills/Softskill/personnes.png" alt="Relationnel" />
   <span>Relationnel</span>
 </div>
 
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/probleme.png" alt="Résolution de problèmes" />
+  <img src="/Portfolio/Image/Skills/Softskill/probleme.png" alt="Résolution de problèmes" />
   <span>Résolution de problèmes</span>
 </div>
 

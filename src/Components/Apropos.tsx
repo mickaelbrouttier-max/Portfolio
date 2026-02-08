@@ -34,7 +34,7 @@ export default function Apropos() {
   }, [text, isDeleting, index]);
 
   return (
-    <div className="page">
+    <div id="accueil" className="page">
       <div className="Center">
         <div className="MiddleText">
           <h1>Bienvenue sur mon Portfolio</h1>
@@ -49,7 +49,7 @@ export default function Apropos() {
   À mon sujet
 </a>      </div>
       <section className="Aboutme" id="about">
-        <div className="Titre">About me
+        <div id="apropos" className="Titre">About me
             </div>
             <section className="Description">
                 <img className="Photo" src="Image/FB_IMG_1612273947187(1) (1).jpg" alt="Photo de Mickaël Brouttier" width="500px"/>
