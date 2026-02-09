@@ -79,6 +79,27 @@ export default function Projects() {
               );
             })}
           </section>
+          
+          <div className="carousel-controls">
+            <button className="carousel-arrow" onClick={prev}>
+              &#10094;
+            </button>
+            
+            <div className="carousel-dots">
+              {projects.map((_, index) => (
+                <span
+                  key={index}
+                  className={`dot ${index === currentIndex ? "active" : ""}`}
+                  onClick={() => setCurrentIndex(index)}
+                ></span>
+              ))}
+            </div>
+
+            <button className="carousel-arrow" onClick={next}>
+              &#10095;
+            </button>
+          </div>
+          
           <p className="Projecttext">{projects[currentIndex].text}</p>
         </div>
       </div>

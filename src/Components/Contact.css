@@ -125,6 +125,17 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .contact-form-container {
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+
+  .contact-form-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+
   .cf {
     flex-direction: column;
     gap: 15px;

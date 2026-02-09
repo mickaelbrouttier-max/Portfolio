@@ -16,9 +16,6 @@
   --shadow-red: 0 8px 32px rgba(224, 32, 32, 0.37);
 }
 
-/* ============================= */
-/* Thème Neon */
-/* ============================= */
 :root[data-theme="neon"] {
   --primary: #00fff7;
   --primary-light: #5eead4;
@@ -37,9 +34,6 @@
   --shadow-red: 0 8px 32px rgba(0, 255, 247, 0.37);
 }
 
-/* ============================= */
-/* Thème Dark Red */
-/* ============================= */
 :root[data-theme="dark-red"] {
   --primary: #dc2626;
   --primary-light: #f87171;
@@ -58,6 +52,41 @@
   --shadow-red: 0 8px 32px rgba(220, 38, 38, 0.37);
 }
 
+:root[data-theme="purple"] {
+  --primary: #8b5cf6;
+  --primary-light: #a78bfa;
+
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+
+  --bg-main: rgba(20, 15, 30, 0.85);
+  --bg-strong: rgba(15, 10, 25, 0.95);
+  --bg-input: rgba(15, 10, 25, 0.9);
+
+  --border-primary: rgba(139, 92, 246, 0.4);
+
+  --shadow-primary-soft: 0 0 20px rgba(139, 92, 246, 0.3);
+  --shadow-primary-strong: 0 0 40px rgba(139, 92, 246, 0.6);
+  --shadow-red: 0 8px 32px rgba(139, 92, 246, 0.37);
+}
+
+:root[data-theme="gold"] {
+  --primary: #fbbf24;
+  --primary-light: #fcd34d;
+
+  --text-main: #ffffff;
+  --text-muted: #e5e5e5;
+
+  --bg-main: rgba(25, 20, 10, 0.85);
+  --bg-strong: rgba(20, 15, 5, 0.95);
+  --bg-input: rgba(20, 15, 5, 0.9);
+
+  --border-primary: rgba(251, 191, 36, 0.4);
+
+  --shadow-primary-soft: 0 0 20px rgba(251, 191, 36, 0.3);
+  --shadow-primary-strong: 0 0 40px rgba(251, 191, 36, 0.6);
+  --shadow-red: 0 8px 32px rgba(251, 191, 36, 0.37);
+}
 html, body {
   margin: 0;
   height: 100%;
@@ -72,7 +101,24 @@ html, body {
   background-attachment: fixed;
   z-index: -1;
 }
+@media (max-width: 400px) {
+  .background {
+    background-attachment: scroll; /* Fix for some mobile browsers */
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .content {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    padding: 0;
+  }
 
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
 .content {
   position: relative;
   z-index: 1;

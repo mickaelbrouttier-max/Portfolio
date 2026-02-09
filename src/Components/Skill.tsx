@@ -72,7 +72,7 @@ export default function Skill() {
 </div>
 
 <div className="TechCard">
-  <img src="/Image/Skills/Softskill/teamwork.png" alt="Travail d’équipe" />
+  <img src="/Portfolio/Image/Skills/Softskill/teamwork.png" alt="Travail d’équipe" />
   <span>Travail d’équipe</span>
 </div>
           </div>
