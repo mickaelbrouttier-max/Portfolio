@@ -1,151 +1,151 @@
 .contact-form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	padding: 50px 20px;
+	margin-top: 150px;
 
-  min-height: 80vh;
-  padding: 50px 20px;
-  margin-top: 150px;
-
-  font-family: "LinexSweet", system-ui, sans-serif;
-  color: var(--text-main);
-  background-color: var(--bg-strong);
-  box-shadow: var(--shadow-red);
+	font-family: "LinexSweet", system-ui, sans-serif;
+	color: var(--text-main);
+	background-color: var(--bg-strong);
+	box-shadow: var(--shadow-red);
 }
 
 .contact-form-container h1 {
-  font-size: 54px;
-  font-weight: bold;
-  color: var(--primary);
-  margin-bottom: 50px;
-  text-align: center;
-  padding-bottom: 130px;
-  text-shadow: var(--shadow-red);
+	font-size: 54px;
+	font-weight: bold;
+	color: var(--primary);
+	margin-bottom: 50px;
+	text-align: center;
+	padding-bottom: 130px;
+	text-shadow: var(--shadow-red);
 }
 
 .cf {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 950px;
-  gap: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 950px;
+	gap: 15px;
 }
 
 .half {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1 1 45%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1 1 45%;
 }
 
 .half.right {
-  min-height: 300px;
+	min-height: 300px;
 }
 
 input[type="name"],
 input[type="email"],
 textarea {
-  background-color: var(--bg-input);
-  border: 2px solid var(--primary);
-  border-radius: 16px;
-  padding: 15px;
-  color: var(--text-main);
-  font-size: 18px;
-  font-family: "LinexSweet", system-ui, sans-serif;
-  transition: all 0.3s ease;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: var(--bg-input);
+	border: 2px solid var(--primary);
+	border-radius: 16px;
+	padding: 15px;
+	color: var(--text-main);
+	font-size: 18px;
+	font-family: "LinexSweet", system-ui, sans-serif;
+	transition: all 0.3s ease;
 }
 
 input[type="name"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  outline: none;
-  border-color: var(--primary-light);
-  background-color: var(--bg-strong);
+	outline: none;
+	border-color: var(--primary-light);
+	background-color: var(--bg-strong);
 }
 
 textarea {
-  resize: vertical;
-  width: 100%;
-  min-height: 250px;
-  font-size: 18px;
+	resize: vertical;
+	min-height: 250px;
+	font-size: 18px;
 }
 
 #input-submit {
-  width: 220px;
-  padding: 18px 0;
-  margin-top: 30px;
-  border: 2px solid var(--primary);
-  border-radius: 24px;
-  background: transparent;
-  color: var(--primary);
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  align-self: center;
+	width: 220px;
+	padding: 18px 0;
+	margin-top: 30px;
+	border: 2px solid var(--primary);
+	border-radius: 24px;
+	background: transparent;
+	color: var(--primary);
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	align-self: center;
 }
 
 #input-submit:hover {
-  background: linear-gradient(90deg, var(--primary), var(--primary-light));
-  color: white;
-  box-shadow: 0 0 25px rgba(255, 0, 127, 0.9);
+	background: linear-gradient(90deg, var(--primary), var(--primary-light));
+	color: white;
+	box-shadow: 0 0 25px rgba(255, 0, 127, 0.9);
 }
 
 #input-submit:active {
-  transform: scale(0.96);
+	transform: scale(0.96);
 }
 
 .email-alert {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px 30px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-family: "LinexSweet", system-ui, sans-serif;
-  font-size: 18px;
-  z-index: 9999;
-  box-shadow: var(--shadow-primary-strong);
-  text-align: center;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 20px 30px;
+	border-radius: 20px;
+	font-weight: bold;
+	font-family: "LinexSweet", system-ui, sans-serif;
+	font-size: 18px;
+	z-index: 9999;
+	box-shadow: var(--shadow-primary-strong);
+	text-align: center;
 }
 
 .email-alert.success {
-  margin-top: 300px;
-  background-color: rgba(20, 50, 20, 0.9);
-  border: 2px solid #00ff7f;
+	margin-top: 300px;
+	background-color: rgba(20, 50, 20, 0.9);
+	border: 2px solid #00ff7f;
 }
 
 .email-alert.error {
-  margin-top: 300px;
-  background-color: rgba(50, 20, 20, 0.95);
-  border: 2px solid var(--primary);
+	margin-top: 300px;
+	background-color: rgba(50, 20, 20, 0.95);
+	border: 2px solid var(--primary);
 }
 
 @media (max-width: 900px) {
-  .contact-form-container {
-    margin-top: 50px;
-    padding-top: 20px;
-  }
+	.contact-form-container {
+		margin-top: 50px;
+		padding-top: 20px;
+	}
 
-  .contact-form-container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
-  }
+	.contact-form-container h1 {
+		font-size: 36px;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+	}
 
-  .cf {
-    flex-direction: column;
-    gap: 15px;
-  }
+	.cf {
+		flex-direction: column;
+		gap: 15px;
+	}
 
-  .half {
-    flex: 1 1 100%;
-  }
+	.half {
+		flex: 1 1 100%;
+	}
 
-  textarea {
-    min-height: 220px;
-  }
+	textarea {
+		min-height: 220px;
+	}
 }

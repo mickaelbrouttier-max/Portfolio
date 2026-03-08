@@ -1,7 +1,20 @@
 @font-face {
-  font-family: 'LinexSweet';
-  src: url('./assets/fonts/LinexSweetStd-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: "LinexSweet";
+	src: url("./assets/fonts/LinexSweetStd-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(50px);
+	transition:
+		opacity 0.8s ease-out,
+		transform 0.8s ease-out;
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
 }

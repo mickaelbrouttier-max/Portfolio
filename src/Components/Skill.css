@@ -1,136 +1,240 @@
 .skill {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  min-height: 90vh;
-  margin-top: 150px;
-  font-size: 20px;
-  color: var(--text-main);
-  background-color: var(--bg-main);
-  align-items: center;
-  font-family: 'LinexSweet', system-ui, sans-serif;
-  padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	min-height: 90vh;
+	margin-top: 150px;
+	font-size: 20px;
+	color: var(--text-main);
+	background-color: var(--bg-main);
+	align-items: center;
+	font-family: "LinexSweet", system-ui, sans-serif;
+	padding-bottom: 50px;
 }
 
 .skill-title {
-  margin-top: 40px;
-  font-size: 48px;
-  font-weight: bold;
-  color: var(--text-main);
-  text-align: center;
+	margin-top: 40px;
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--text-main);
+	text-align: center;
 }
 
 .skill-sections {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  width: 70%;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+	display: flex;
+	margin-top: 50px;
+	width: 90%;
+	max-width: 1200px;
+	justify-content: space-between;
+	gap: 60px;
+	flex-wrap: wrap;
 }
 
-.hard-skills img {
-  width: 60px;
-  height: 50px;
-  margin: 10px;
-}
-
-.hard-skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  flex: 1;
-  min-width: 300px;
+.hard-skills,
+.soft-skills {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	flex: 1;
+	min-width: 300px;
 }
 
 .titlehardskills {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
 }
 
 .TechGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-  width: 100%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr;
+	gap: 20px;
+	margin-top: 40px;
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .TechCard {
-  background: var(--bg-strong);
-  border: 1px solid var(--border-primary);
-  border-radius: 16px;
-  padding: 15px;
+	background: var(--bg-strong);
+	border: 1px solid var(--border-primary);
+	border-radius: 16px;
+	padding: 15px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 125px;
+	gap: 12px;
 
-  box-shadow: var(--shadow-primary-soft);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: var(--shadow-primary-soft);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
 
 .TechCard:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: var(--shadow-primary-strong);
+	transform: translateY(-6px) scale(1.03);
+	box-shadow: var(--shadow-primary-strong);
 }
 
 .TechCard img {
-  width: 50px;
-  height: 48px;
-  filter: drop-shadow(0 0 6px var(--primary));
-  object-fit: contain;
+	width: 50px;
+	height: 50px;
+	filter: drop-shadow(0 0 6px var(--primary));
+	object-fit: contain;
+	object-position: center;
+}
+
+.soft-skills .TechCard img {
+	transform: scale(
+		1.3
+	); /* Compensates for heavy transparent margins natively inside the PNGs */
 }
 
 .TechCard span {
-  color: var(--text-main);
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-}
-
-.soft-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex: 1;
-  min-width: 300px;
+	color: var(--text-main);
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
 }
 
 @media (max-width: 768px) {
-  .skill {
-    margin-top: 50px;
-    padding-top: 20px;
-  }
+	.skill {
+		margin-top: 50px;
+		padding-top: 20px;
+	}
 
-  .skill-title {
-    font-size: 36px;
-    margin-top: 20px;
-  }
+	.skill-title {
+		font-size: 36px;
+		margin-top: 20px;
+	}
 
-  .skill-sections {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
+	.skill-sections {
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
 
-  .hard-skills, .soft-skills {
-    width: 100%;
-    margin: 0;
-  }
+	.hard-skills,
+	.soft-skills {
+		width: 100%;
+		margin: 0;
+	}
 
-  .TechGrid {
-    gap: 15px;
-  }
+	.TechGrid {
+		gap: 15px;
+	}
+}
+@media (max-width: 400px) {
+	.TechCard {
+		padding: 5px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+	.skill-sections {
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
+	.hard-skills,
+	.soft-skills {
+		width: 100%;
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.skill-sections {
+		gap: 80px;
+		width: 85%;
+	}
+	.TechCard {
+		padding: 25px 15px;
+		gap: 15px;
+		min-height: 170px;
+	}
+	.TechCard img {
+		width: 75px;
+		height: 75px;
+		object-fit: contain;
+		object-position: center;
+	}
+	.TechCard span {
+		font-size: 18px;
+	}
+	.TechGrid {
+		gap: 30px;
+		max-width: 600px;
+	}
+}
+
+/* Animations d'apparition des cartes Skills */
+
+.skill:not(.visible) .TechCard {
+	opacity: 0;
+}
+
+.skill.visible .TechCard {
+	animation: slideUpCard 0.6s ease-out backwards;
+}
+
+@keyframes slideUpCard {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Hard Skills Delays */
+.skill.visible .hard-skills .TechCard:nth-child(1) {
+	animation-delay: 0.1s;
+}
+.skill.visible .hard-skills .TechCard:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.skill.visible .hard-skills .TechCard:nth-child(3) {
+	animation-delay: 0.3s;
+}
+.skill.visible .hard-skills .TechCard:nth-child(4) {
+	animation-delay: 0.4s;
+}
+.skill.visible .hard-skills .TechCard:nth-child(5) {
+	animation-delay: 0.5s;
+}
+.skill.visible .hard-skills .TechCard:nth-child(6) {
+	animation-delay: 0.6s;
+}
+
+/* Soft Skills Delays (commencent légèrement après) */
+.skill.visible .soft-skills .TechCard:nth-child(1) {
+	animation-delay: 0.4s;
+}
+.skill.visible .soft-skills .TechCard:nth-child(2) {
+	animation-delay: 0.5s;
+}
+.skill.visible .soft-skills .TechCard:nth-child(3) {
+	animation-delay: 0.6s;
+}
+.skill.visible .soft-skills .TechCard:nth-child(4) {
+	animation-delay: 0.7s;
+}
+.skill.visible .soft-skills .TechCard:nth-child(5) {
+	animation-delay: 0.8s;
+}
+.skill.visible .soft-skills .TechCard:nth-child(6) {
+	animation-delay: 0.9s;
 }
