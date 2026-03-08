@@ -98,9 +98,9 @@ export default function Apropos() {
 							évoluer dans l’univers du développement web.
 						</p>
 						<a
-							href="public/cv/Mickaël BrouttierCV.pdf"
+							href={`${import.meta.env.BASE_URL}cv/Mickaël BrouttierCV.pdf`}
 							className="NextSection"
-							download
+							download="Mickaël Brouttier - CV.pdf"
 						>
 							Télécharger mon CV
 						</a>
