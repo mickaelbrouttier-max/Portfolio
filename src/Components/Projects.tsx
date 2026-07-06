@@ -10,6 +10,12 @@ const projects = [
 		link: "https://mickaelbrouttier-max.github.io/combatfit/#/",
 	},
 	{
+		title: "UldyssianGame",
+		Image: "/Portfolio/Image/Projects/UldyssianGame.png",
+		text: "UldyssianGame est une plateforme web innovante dédiée à la simplification de l'organisation d'événements gaming et de soirées communautaires. Conçu pour répondre aux défis logistiques rencontrés par les organisateurs, le projet automatise la gestion des participants et le suivi des tournois pour offrir une expérience fluide, aussi bien pour les organisateurs que pour les joueurs.",
+		link: "https://uldyssiangame.vercel.app/",
+	},
+	{
 		title: "TripTogether",
 		Image: "/Portfolio/Image/Projects/TripTogether.png",
 		text: "Plateforme centralisant la planification de voyages à plusieurs. Les utilisateurs peuvent construire leur itinéraire ensemble en proposant et en votant pour différentes destinations et étapes.\nL'application met en avant une expérience fluide grâce à la mise à jour des données en temps réel et un parcours utilisateur pensé pour la prise de décision collective.\n\nTechnos : React, TypeScript, Node.js, bases de données relationnelles",
