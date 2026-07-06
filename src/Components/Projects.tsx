@@ -4,6 +4,12 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const projects = [
 	{
+		title: "Combatfit",
+		Image: "/Portfolio/Image/Projects/Combatfit.png",
+		text: "Plateforme web dédiée au coaching de karaté et à la préparation physique. Elle intègre un système interactif de prise de rendez-vous en ligne avec sélection de créneaux en temps réel, un tableau de bord d'administration pour gérer les réservations, ainsi qu'un système d'envoi automatique d'e-mails de confirmation.\n\nTechnos : Angular, TypeScript, Node.js, Express, MySQL, Nodemailer, REST API",
+		link: "https://mickaelbrouttier-max.github.io/combatfit/#/",
+	},
+	{
 		title: "TripTogether",
 		Image: "/Portfolio/Image/Projects/TripTogether.png",
 		text: "Plateforme centralisant la planification de voyages à plusieurs. Les utilisateurs peuvent construire leur itinéraire ensemble en proposant et en votant pour différentes destinations et étapes.\nL'application met en avant une expérience fluide grâce à la mise à jour des données en temps réel et un parcours utilisateur pensé pour la prise de décision collective.\n\nTechnos : React, TypeScript, Node.js, bases de données relationnelles",
@@ -40,6 +46,7 @@ const projects = [
 		text: "Application permettant de créer des personnages pour le jeu Donjons & Dragons. Le projet met en œuvre une logique conditionnelle afin de proposer des résultats cohérents avec l’univers Donjons & Dragons. Il permet ainsi un gain de temps pour les joueurs ainsi que le maitre du jeu par l'envoie des personnages générés via un formulaire et donc, ne pas perdre de temps à créer les personnages manuellement lors de la première cession.Technos : JavaScript, React, formulaires dynamiques",
 		link: "https://mickaelbrouttier-max.github.io/DandDbyMike/",
 	},
+
 ];
 
 export default function Projects() {
